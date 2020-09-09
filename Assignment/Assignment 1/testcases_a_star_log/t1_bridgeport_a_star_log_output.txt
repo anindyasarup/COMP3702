@@ -1,0 +1,6 @@
+s,f,s,f,s,f,r,f,l,f,l,s,f,l,f,f,f,f,r,f,f,r,f,r,s,f,r,f,l,f,l,s,f,s,f,s,f,l,f,r,s,r,f,f,l,f,l,s,f,l,f,r,f,r,s,f,r,f,l,f,l,s,f,f,f,l,l,f
+number of steps for optimal answer = 68
+total number of nodes = 66305
+total number of nodes in fringes (reached goal) = 476
+total number of nodes in the explored list = 17053
+run time of the algorithm = 1.4565556049346924

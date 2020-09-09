@@ -1,0 +1,132 @@
+\documentclass[11pt,a4paper,noindent]{article}
+
+% Your detail and answers are entered after the preamble
+
+%% PREAMBLE: Do not remove any commands %%
+%=========================================
+\newcommand*\CourseCode{COMP3702/COMP7702} 
+\newcommand*\CourseName{Artificial Intelligence} 
+\newcommand*\Session{Semester 2, 2020} 
+\newcommand*\Title{Assignment 1: Search in {\sc LaserTank}}
+\newcommand*\SupportCodeLink{\url{https://gitlab.com/3702-2020/assignment-1-support-code}}
+
+\title{\CourseCode\ \CourseName\ (\Session)\\
+\Title --- \textbf{Report Template}}
+\date{} % keep this blank
+
+\usepackage{graphicx,amssymb,caption}
+\usepackage{minted} % For including pretty code
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{titling}
+\setlength{\droptitle}{-2cm}
+\usepackage{hyperref}
+\usepackage{tabularx, multirow}
+
+\begin{document}
+\maketitle
+\vspace{-30mm}
+
+
+%% ENTER YOUR DETAILS HERE %%
+%=============================
+\section*{Name: Anindya Sarup% Your name here
+}
+\section*{Student ID: 44243726% Your SID number here
+}
+\section*{Student email: a.sarup@uqconnect.edu.au% Your email address
+}
+
+\noindent
+Note: Please enter the name, student ID number and student email to reflect your identity and \textbf{do not modify the design or the layout in the assignment template}, including changing the paging. 
+
+\medskip\hrule
+
+%% ENTER YOUR ANSWERS BELOW %%
+%=============================
+\bigskip \noindent
+\textbf{Question 1} (Complete your full answer to Question 1 on the remainder page 1)
+
+% Your answer to Question 1 goes here
+\\ 
+\noindent \\ 
+The dimensions of complexity in {\sc LaserTank} have been stated below, along with the the reasoning of their selection:
+\begin{itemize}
+    \item \textbf{Modularity:} The modularity for {\sc LaserTank} is \textbf{flat}. There is no organizational structure, that is, the agent does not reason on multiple levels of abstraction and the environment is discrete.
+    \item \textbf{Planning Horizon:} The planning horizon for {\sc LaserTank} is an \textbf{indefinite stage problem} because while the agent looks some finite steps ahead, but it does not know the total amount of steps it would take for the agent to get to the goal.
+    \item \textbf{Uncertainty:} The environment is partially observable to the agent and the effect of uncertainty is deterministic because the state resulting is determined from the action of the agent on the state. Thus the sensing uncertainty dimension is \textbf{partially observable} and the effect of uncertainty is \textbf{deterministic}.
+    \item \textbf{Goals versus complex preferences:} The agent is goal driven with no trade-offs involved. Thus its preference is an \textbf{achievement goal}.
+    \item \textbf{Single or multiple agents:} It is \textbf{single agent} driven because there is only a single agent performing an action in the environment.
+    \item \textbf{Learning from experience:} There is no learning from past data or experience involved, and the \textbf{knowledge is given}.
+    \item \textbf{Perfect rationality versus bounded rationality:} The agent reasons for the best action without taking into account its limited computational resources and thus has \textbf{perfect rationality}.
+    \item \textbf{Succinctness and Expressiveness:} The environment has multiple features with each feature containing value assigned by the state.
+\end{itemize}
+Reference: \url{https://www.cs.ubc.ca/\textasciitilde poole/papers/dimensions2006.pdf}
+
+\newpage\noindent
+\textbf{Question 2} (Complete your full answer to Question 2 on page 2)
+
+% Your answer to Question 2 goes here
+
+\begin{itemize}
+    \item \textbf{Action Space:} The set \emph{\{MOVE\_FORWARD, MOVE\_LEFT, MOVE\_RIGHT, SHOOT\_LASER\}}. The set mentioned is the set of all possible actions that the agent can perform.
+    \item \textbf{Percept Space = Perception Function:} The tiles adjacent to the agent are the only agent in {\sc LaserTank} can perceive. Thus, the percept space for the agent is the set of all adjacent tales for the agent at a particular position (its neighbourhood).
+    \item \textbf{State Space:} The state space of this environment are all the tiles present in the {\sc LaserTank} map.
+    \item \textbf{Transition Function:} The resultant change of the configuration of the world after the agent performs actions on it are described here:
+    \begin{itemize}
+        \item \textbf{MOVE\_FORWARD:} When the agent performs the action MOVE\_FORWARD, the following takes place:
+        \begin{itemize}
+            \item \emph{If there is nothing:} If there is nothing on the tile in the heading direction of the player, the player moves one tile forward with no consequences.
+            \item \emph{If there is a anti-tank:} If there is a anti-tank in the line of sight of the player's heading direction, the consequence is game over.
+            \item \emph{If there is a wall or mirror:} In the case of a wall or a mirror in the heading direction of the player, there is no change to the player's position.
+            \item \emph{If there is ice:} In the case of ice, the player glides forward on the ice until there is no more ice or until a COLLISION takes place.
+        \end{itemize}
+        \item \textbf{MOVE\_LEFT or MOVE\_RIGHT:} This command only results in changing the heading direction of the player, thus leading to the change in percept space of the player/tank.
+        \item \textbf{SHOOT\_LASER:} This action causes a change in the change of the state space, as characters on the game may lose their position
+    \end{itemize}
+    \item \textbf{Utility Function:} If the player/tank reaches the target/flag, the value for the utility function is 1 otherwise it's 1. This is due the fact that the agent has no objective apart from reaching the target/flag.
+\end{itemize}
+
+
+\newpage\noindent
+\textbf{Question 3} (Complete your full answer to Question 3 on page 3)
+
+% Your answer to Question 3 goes here
+
+\begin{center}
+Performance of \textbf{Uniform Cost Search} and Performance of \textbf{A* Search} on the file \textbf{t3\_the\_river.txt}:
+\newline \\
+    \begin{tabular}{ | m{7cm} | m{3cm} | m{3cm} | }
+    \hline
+    Question & Uniform-Cost-Search & A* Search \\ [0.5ex]
+    \hline \hline 
+    \textbf{(a)} The number of nodes generated & 57241 & 29029\\
+    \hline 
+    \textbf{(b)} The number of nodes on the fringe when the search terminates & 390 & 397 \\
+    \hline 
+    \textbf{(c)} The number of nodes on the explored list (if there is one) when the search terminates & 14701 & 7655 \\
+    \hline 
+    \textbf{(d)} The run time of the algorithm (in seconds) & 3.5417 seconds & 1.7378 seconds \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\noindent \\ \textbf{(e)} The test-case \emph{'t3\_the\_river.txt'} has been chosen due to the intricacies involved in finding an optimal solution for this test-case. \\
+It can be clearly seen that the total number of nodes generated during A* Search are almost exactly half of the total number of nodes generated during UCS algorithm-based implementation. This clearly affects the total run-time of the algorithms, where A* star takes half the time to find the most optimal solution when compared to UCS. \\
+UCS visits/explores twice the number of nodes when compared to A* Search because it gives equal importance (weight) to all items in the action space set, while A* is biased due to its heuristic function.\\
+All these factors directly affect the total run-time of the two algorithms, thus one can see the discrepency in performing an uninformed search (UCS) and an informed search (A* algorithm).
+
+\newpage\noindent
+\textbf{Question 4} (Complete your full answer to Question 4 on page 4 and 5)
+
+% Your answer to Question 4 goes here
+\noindent \\ Due  to the large dimensions of the different test-cases provided for this assignment, \textbf{'Manhattan Distance'} was chosen as the heuristic function. \\
+Due to the nature of how the game works, a different heuristic function was not chosen because the special tiles - Ice, bricks, mirrors and teleporter tiles were already well-implemented internally. Also due to the nature of my step function that uses the 'apply\_move(move)' function of LaserTankMap class, I decided not to create different heuristic functions for the game.
+
+\noindent \\ In hindsight, maybe a different approach to the entirety of the 'solver.py', step-function and heuristics could've resulted in a better inclusion of the special tiles.
+
+\newpage\ldots % Typeout this line if your answer to Question 4 flows onto page 5, otherwise leave it in place.
+
+
+\end{document}

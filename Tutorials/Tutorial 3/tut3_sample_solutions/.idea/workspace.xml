@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3dca8031-6dba-4f54-bde8-e8590bb69414" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/laser_tank.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/nvm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/path_visualiser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/rungame.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/runsolver.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/solver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t0_simple_ice.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t0_simple_maze.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t0_simple_square.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t1_bridgeport.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t1_crossfire.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t1_ice_maze.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t2_brickyard.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t2_puzzle_maze.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t2_shortcut.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t3_labyrinth.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/testcases/t3_the_river.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/Assignment 1/tester.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Assignment/assignment-1-support-code-master.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Tutorial 2/COMP3702_Tutorial_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a_comp3702-2020_tutorial03_samplecode.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/astar_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/breath_first_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depth_first_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gridworld.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iterative_deepening_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question_3_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question_3_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/COMP3702 - Week 1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/COMP3702_2020_Module-0-pre.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/Module 0.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/images/agent-inputs-output.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/images/ai-timeline.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/images/definition-dimensions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/images/human-dimensions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/images/module-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/images/module-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/images/module-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/images/module-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 1/LaTex  files - Week 1/images/module-5.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JupyterTrust" id="b83e0572-f558-415d-918c-0983a87b36d3" />
+  <component name="ProjectId" id="1hBh2dbH6ikbXefZQuJBAW5NN17" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3dca8031-6dba-4f54-bde8-e8590bb69414" name="Default Changelist" comment="" />
+      <created>1599490186589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599490186589</updated>
+      <workItem from="1599490187663" duration="3868000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
