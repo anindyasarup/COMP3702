@@ -1,6 +1,6 @@
 # Assignment 1 Support Code
 
-This is the support code for COMP3702 2019 Assignment 2.
+This is the support code for COMP3702 2020 Assignment 1
 
 The following files are provided:
 
